@@ -14,4 +14,7 @@ public class EmailCheck {
         String Email = (Pattern.matches(expression, email)) ? "Successfully Valid" : "Invalid";
 	System.out.println("Email " + Email + " ");
     }
+	public static void main(String[] args) {
+		EmailCheck();
+	}
 }
