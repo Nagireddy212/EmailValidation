@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public class EmailCheck {
 
-    public static void main(String[] args) {
+    public static void emailValidate() {
         System.out.println("Email Validation");
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter Email: ");
@@ -15,6 +15,6 @@ public class EmailCheck {
 	System.out.println("Email " + Email + " ");
     }
 	public static void main(String[] args) {
-		EmailCheck();
+		emailValidate();
 	}
 }
