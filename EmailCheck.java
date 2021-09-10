@@ -8,7 +8,7 @@ public class EmailCheck {
         System.out.print("Please Enter Email: ");
         String email = scan.nextLine();
         System.out.println(email);
-        String expression = "^[a-zA-Z0-9]+([.+_-]{0,1}+[a-zA-Z0-9])*+[@]+[a-zA-Z]+[.]+[a-zA-Z]{2,4}+([.]{1}+[a-zA-z]{0,2})*";
+        String expression = "^[\\u0E00-\\u0E7Fa-zA-Z0-9]+([.+_-]{0,1}+[\\u0E00-\\u0E7Fa-zA-Z0-9])*+[@]+[\\u0E00-\\u0E7Fa-zA-Z-]+[.]+[\\u0E00-\\u0E7Fa-zA-Z]{2,30}+([.]{1}+[\\u0E00-\\u0E7Fa-zA-z]{0,10})*";
         String result = (Pattern.matches(expression, email)) ? "Successfully Valid" : "Invalid";
         System.out.println("Email " + result + " ");
     }
